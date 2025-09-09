@@ -26,6 +26,12 @@ const register = {
 };
 
 export function AuthForm({ isLoginPage, className, ...props }) {
+  const handleLogin = (e) => {
+    e.preventDefault();
+    // Implement login logic here
+    console.log("Hello");
+  };
+
   return (
     <div className={cn("flex flex-col gap-6", className)} {...props}>
       <Card>
@@ -92,7 +98,11 @@ export function AuthForm({ isLoginPage, className, ...props }) {
               )}
               <div className="flex flex-col gap-3">
                 {isLoginPage ? (
-                  <Button type="submit" className="w-full">
+                  <Button
+                    onClick={handleLogin}
+                    type="submit"
+                    className="w-full"
+                  >
                     {login.title}
                   </Button>
                 ) : (
