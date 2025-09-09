@@ -6,13 +6,15 @@ import CreateSubcategory from "./pages/dashboard/CreateSubcategory";
 import ListCategory from "./pages/dashboard/ListCategory";
 import CreateProduct from "./pages/dashboard/CreateProduct";
 import ListProduct from "./pages/dashboard/ListProduct";
+import LoginPage from "./pages/auth/Login";
 
 function App() {
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Dashboard />} />
+          <Route path="/" element={<LoginPage />} />
+          <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/create-category" element={<CreateCategory />} />
           <Route path="/create-subcategory" element={<CreateSubcategory />} />
           <Route path="/list-category" element={<ListCategory />} />
