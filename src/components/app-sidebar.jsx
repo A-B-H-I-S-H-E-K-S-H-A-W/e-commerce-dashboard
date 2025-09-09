@@ -128,32 +128,32 @@ const data = {
   projects: [
     {
       name: "Dashboard",
-      url: "#",
+      url: "/",
       icon: PieChart,
     },
     {
       name: "Create Category",
-      url: "#",
+      url: "/create-category",
       icon: Newspaper,
     },
     {
       name: "Create Subcategory",
-      url: "#",
+      url: "/create-subcategory",
       icon: Map,
     },
     {
       name: "List Categories",
-      url: "#",
+      url: "/list-category",
       icon: Folder,
     },
     {
       name: "Create Product",
-      url: "#",
+      url: "/create-product",
       icon: Map,
     },
     {
       name: "List Product",
-      url: "#",
+      url: "/list-product",
       icon: Folder,
     },
   ],
