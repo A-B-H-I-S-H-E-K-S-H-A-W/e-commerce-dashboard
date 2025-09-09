@@ -7,6 +7,7 @@ import ListCategory from "./pages/dashboard/ListCategory";
 import CreateProduct from "./pages/dashboard/CreateProduct";
 import ListProduct from "./pages/dashboard/ListProduct";
 import LoginPage from "./pages/auth/Login";
+import RegisterPage from "./pages/auth/Register";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<LoginPage />} />
+          <Route path="/register" element={<RegisterPage />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/create-category" element={<CreateCategory />} />
           <Route path="/create-subcategory" element={<CreateSubcategory />} />
